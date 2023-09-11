@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header>
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+      <h3>Sweet <span>Souls</span></h3>
+    </div>
+  </header>
+  <!--header area end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+    <center>
+      <img src="images/logo.jpg" class="profile_image" alt="">
+      <h4>LOGO</h4>
+    </center>
+    <a href="management.html" target="_blank"><i class="fas fa-desktop"></i><span>Management</span></a>
+    <a href="celebrity.html"><i class="fas fa-cogs"></i><span>Celebrities</span></a>
+    <a href="diet.html" target="_blank"><i class="fas fa-table"></i><span>Diet Management</span></a>
+    <a href="about.html" target="_blank"><i class="fas fa-th"></i><span>About Diabetes</span></a>
+    <a href="contact.html" target="_blank"><i class="fas fa-info-circle"></i><span>Contact</span></a>
+  </div>
+  <div class="content"></div>
+  <!--sidebar end-->
+
+ <div class="bgn">
+    <div class="container">
+        <h1 class="brand"><span>Sweet Souls</span>Please Fill Your Details</h1>
+        <div class="wrapper">
+          <div class="company-info">
+           
+           
+          </div>
+          <div class="contact">
+            <h3>Email Us</h3>
+            <div class="alert">Your message has been sent</div>
+            <form id="contactForm">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+              </p>
+              <p>
+                <label>Company</label>
+                <input type="text" name="company" id="company">
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" required>
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="text" name="phone" id="phone">
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
